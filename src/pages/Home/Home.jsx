@@ -1,6 +1,11 @@
+import NavBar from "../../components/NavBar/NavBar";
 import styles from "./Home.module.scss";
 const Home = () => {
-    return <h1>Hello everyone!</h1>;
+  return (
+    <div>
+      <NavBar />
+    </div>
+  );
 };
 
 export default Home;

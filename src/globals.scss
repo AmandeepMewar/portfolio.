@@ -1,40 +1,51 @@
 :root {
-    --clr-black: #000;
-    --clr-white: #fff;
+  --clr-text: #d5d5d5;
+
+  --clr-grey-1: #181818;
+  --clr-grey-2: #1a1a1a;
+  --clr-grey-3: #202020;
+
+  --clr-coral: #e76161;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
 }
 
 html {
-    font-size: 62.5%;
-    box-sizing: border-box;
+  font-size: 62.5%;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: consolas;
-    background-color: var(--clr-black);
-    color: var(--clr-white);
-}
+  font-size: 1.8rem;
 
-img {
-    width: 100%;
-    display: block;
+  font-family: consolas;
+  color: var(--clr-text);
+  background-color: var(--clr-grey-2);
+  line-height: 1.5;
+  font-weight: 700;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
+  color: inherit;
 }
 
 button {
-    all: unset;
-    cursor: pointer;
+  all: unset;
+  cursor: pointer;
+  font: inherit;
+}
+
+img {
+  width: 100%;
+  display: block;
 }
 
 ul,
 li {
-    list-style: none;
+  list-style: none;
 }
