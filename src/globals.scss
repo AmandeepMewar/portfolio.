@@ -1,0 +1,40 @@
+:root {
+    --clr-black: #000;
+    --clr-white: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: consolas;
+    background-color: var(--clr-black);
+    color: var(--clr-white);
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    all: unset;
+    cursor: pointer;
+}
+
+ul,
+li {
+    list-style: none;
+}
