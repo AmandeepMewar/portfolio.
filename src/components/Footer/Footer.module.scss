@@ -1,0 +1,46 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 4rem;
+
+  &__box {
+    width: 4.5rem;
+    height: 4.5rem;
+    border: 3px solid var(--clr-coral);
+    transform: rotate(45deg);
+  }
+
+  &__copyright {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.6rem 4rem;
+
+    border-bottom: 3px solid var(--clr-coral);
+
+    h4 {
+      font-size: 1.6rem;
+      line-height: 1.3;
+    }
+  }
+
+  &__socials {
+    display: flex;
+    gap: 3rem;
+
+    &--icon {
+      width: 2.8rem;
+      height: 2.8rem;
+      transition: all 0.4s;
+      cursor: pointer;
+
+      &:hover {
+        color: var(--clr-coral);
+      }
+    }
+  }
+}

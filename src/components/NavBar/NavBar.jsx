@@ -18,7 +18,7 @@ const NavBar = () => {
   return (
     <nav className={styles["nav"]}>
       <div className={styles["nav__person"]}>
-        <div className={styles["nav__person--age"]}>
+        <div className={styles["nav__person--logo"]}>
           <h3>AM</h3>
         </div>
         <h3>Amandeep Mewar</h3>
