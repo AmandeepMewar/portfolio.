@@ -1,0 +1,16 @@
+.button {
+  width: 46rem;
+  background-color: var(--clr-grey-1);
+  color: var(--clr-text);
+  border: 2px solid var(--clr-text);
+  transition: all 0.3s;
+  text-align: center;
+  padding: 1rem;
+
+  font-weight: 300;
+
+  &:hover {
+    background-color: var(--clr-coral);
+    border: 2px solid var(--clr-coral);
+  }
+}

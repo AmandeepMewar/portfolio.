@@ -7,7 +7,7 @@ const navi = [
   },
   {
     id: 2,
-    name: "Projects",
+    name: "Work",
   },
   {
     id: 3,
@@ -19,9 +19,9 @@ const NavBar = () => {
     <nav className={styles["nav"]}>
       <div className={styles["nav__person"]}>
         <div className={styles["nav__person--logo"]}>
-          <h3>AM</h3>
+          <h4>AM</h4>
         </div>
-        <h3>Amandeep Mewar</h3>
+        <h4>Amandeep Mewar</h4>
       </div>
       <div className={styles["nav__menu"]}>
         <ul className={styles["nav__menu--list"]}>

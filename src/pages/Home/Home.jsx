@@ -4,6 +4,7 @@ import styles from "./Home.module.scss";
 import TechStack from "../../components/TechStack/TechStack";
 
 import Footer from "../../components/Footer/Footer";
+import Button from "../../components/Button/Button";
 const Home = () => {
   return (
     <div className={styles["home"]}>
@@ -31,9 +32,24 @@ const Home = () => {
         <div className={styles["arrow-icon"]}></div>
       </div>
 
+      <div className={styles["home__section"]}>
+        <h1>Work history</h1>
+        <p>Here you can find out more about the projects I've worked on.</p>
+        <Button>Check out my work history</Button>
+      </div>
+
       <div className={styles["home__tech-stack"]}>
         <h1>Technologies and Tools I work with</h1>
         <TechStack />
+      </div>
+
+      <div className={styles["home__section"]}>
+        <h1>About me</h1>
+        <p>
+          Here you can find out more about me, my hobbies, and my personal
+          projects I'm currently working on.
+        </p>
+        <Button>Get to know more about me</Button>
       </div>
 
       <Footer />
