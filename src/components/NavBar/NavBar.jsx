@@ -1,17 +1,20 @@
 import styles from "./NavBar.module.scss";
-
+import { NavLink } from "react-router-dom";
 const navi = [
   {
     id: 1,
     name: "Home",
+    to: "/",
   },
   {
     id: 2,
     name: "Work",
+    to: "/work",
   },
   {
     id: 3,
     name: "About",
+    to: "/about",
   },
 ];
 const NavBar = () => {
@@ -28,7 +31,7 @@ const NavBar = () => {
           {navi.map(item => {
             return (
               <li key={item.id} className={styles["nav__menu--item"]}>
-                {item.name}
+                <NavLink to={item.to}>{item.name}</NavLink>
               </li>
             );
           })}

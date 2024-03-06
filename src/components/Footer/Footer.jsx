@@ -15,16 +15,24 @@ const Footer = () => {
       <div>
         <ul className={styles["footer__socials"]}>
           <li>
-            <FaGithub className={styles["footer__socials--icon"]} />
+            <a href="https://github.com/AmandeepMewar">
+              <FaGithub className={styles["footer__socials--icon"]} />
+            </a>
           </li>
           <li>
-            <SiGmail className={styles["footer__socials--icon"]} />
+            <a href="">
+              <SiGmail className={styles["footer__socials--icon"]} />
+            </a>
           </li>
           <li>
-            <FaLinkedin className={styles["footer__socials--icon"]} />
+            <a href="https://www.linkedin.com/in/amandeepmewar/">
+              <FaLinkedin className={styles["footer__socials--icon"]} />
+            </a>
           </li>
           <li>
-            <FaXTwitter className={styles["footer__socials--icon"]} />
+            <a href="https://twitter.com/AmandeepMewar">
+              <FaXTwitter className={styles["footer__socials--icon"]} />
+            </a>
           </li>
         </ul>
       </div>

@@ -21,10 +21,10 @@
     justify-content: center;
     padding: 1.6rem 4rem;
 
-    border-bottom: 3px solid var(--clr-coral);
+    border-bottom: 2.5px solid var(--clr-coral);
 
     h4 {
-      font-size: 1.6rem;
+      font-size: 1.5rem;
       line-height: 1.3;
     }
   }
@@ -34,8 +34,8 @@
     gap: 3rem;
 
     &--icon {
-      width: 2.8rem;
-      height: 2.8rem;
+      width: 2.6rem;
+      height: 2.6rem;
       transition: all 0.4s;
       cursor: pointer;
 

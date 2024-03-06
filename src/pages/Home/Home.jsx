@@ -47,7 +47,7 @@ const Home = () => {
         <h1>About me</h1>
         <p>
           Here you can find out more about me, my hobbies, and my personal
-          projects I'm currently working on.
+          projects I&apos;m currently working on.
         </p>
         <Button>Get to know more about me</Button>
       </div>
