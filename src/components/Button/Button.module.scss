@@ -1,11 +1,14 @@
 .button {
-  width: 46rem;
+  width: 100%;
   background-color: var(--clr-grey-1);
   color: var(--clr-text);
   border: 2px solid var(--clr-text);
   transition: all 0.3s;
-  text-align: center;
   padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
 
   font-weight: 300;
 

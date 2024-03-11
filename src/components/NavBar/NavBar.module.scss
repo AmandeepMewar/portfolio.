@@ -31,8 +31,8 @@
   &__menu--item {
     padding: 1px 5px;
   }
+}
 
-  &__menu--item:first-of-type {
-    color: var(--clr-coral);
-  }
+.active {
+  color: var(--clr-coral);
 }

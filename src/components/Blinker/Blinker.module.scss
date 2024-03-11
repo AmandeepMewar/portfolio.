@@ -1,0 +1,39 @@
+.arrow-icon {
+  width: 100%;
+  display: flex;
+  animation: blink 2s linear infinite;
+  justify-content: center;
+  position: absolute;
+  bottom: 7%;
+
+  &::before {
+    content: "";
+    width: 1.8rem;
+    height: 2px;
+    background-color: white;
+    transform: rotate(30deg);
+    margin-right: -3px;
+  }
+
+  &::after {
+    content: "";
+    width: 1.8rem;
+    height: 2px;
+    background-color: white;
+    transform: rotate(-30deg);
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+
+  60% {
+    opacity: 0.1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

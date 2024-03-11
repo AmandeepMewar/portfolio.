@@ -17,7 +17,7 @@ const navi = [
     to: "/about",
   },
 ];
-const NavBar = () => {
+const NavBar = ({ path }) => {
   return (
     <nav className={styles["nav"]}>
       <div className={styles["nav__person"]}>
@@ -30,7 +30,12 @@ const NavBar = () => {
         <ul className={styles["nav__menu--list"]}>
           {navi.map(item => {
             return (
-              <li key={item.id} className={styles["nav__menu--item"]}>
+              <li
+                key={item.id}
+                className={`${styles["nav__menu--item"]} ${
+                  path === item.to && styles["active"]
+                }`}
+              >
                 <NavLink to={item.to}>{item.name}</NavLink>
               </li>
             );

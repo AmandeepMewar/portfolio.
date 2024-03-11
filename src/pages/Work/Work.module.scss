@@ -1,0 +1,47 @@
+.work {
+  width: 100%;
+  height: 100%;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.work-content {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.work-intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 10rem 0;
+  h1 {
+    margin-bottom: 2rem;
+  }
+}
+
+.work-projects {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10rem;
+
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding: 10rem 0;
+    gap: 2rem;
+  }
+}

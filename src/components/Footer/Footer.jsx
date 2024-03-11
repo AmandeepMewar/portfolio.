@@ -4,11 +4,12 @@ import { FaGithub } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import styles from "./Footer.module.scss";
 const Footer = () => {
+  const year = new Date().getFullYear();
   return (
     <footer className={styles["footer"]}>
       <div className={styles["footer__box"]}></div>
       <div className={styles["footer__copyright"]}>
-        <h4>©️2024</h4>
+        <h4>©️{year}</h4>
         <h4>Built with</h4>
         <h4>ReactJs/Javascript</h4>
       </div>
