@@ -1,12 +1,5 @@
-:root {
-  --clr-text: #d5d5d5;
-
-  --clr-grey-1: #181818;
-  --clr-grey-2: #1a1a1a;
-  --clr-grey-3: #202020;
-
-  --clr-coral: #e76161;
-}
+@use "./partials/variables" as *;
+@use "./partials/mixins" as *;
 
 *::-webkit-scrollbar {
   width: 0.8rem;
@@ -38,7 +31,6 @@ html {
 
 body {
   font-size: 1.8rem;
-
   font-family: consolas;
   color: var(--clr-text);
   background-color: var(--clr-grey-2);

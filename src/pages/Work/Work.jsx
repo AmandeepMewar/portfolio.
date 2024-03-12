@@ -1,16 +1,16 @@
-import Blinker from "../../components/Blinker/Blinker";
-import Card from "../../components/Card/Card";
-import NavBar from "../../components/NavBar/NavBar";
-import ProjectsData from "../../utils/projects";
 import styles from "./Work.module.scss";
 
-import Footer from "../../components/Footer/Footer";
+import ProjectsData from "../../utils/projects";
+import { Card, NavBar, Footer } from "../../components/index";
+
 import usePageTitle from "../../hooks/usePageTitle";
+import { ScrollRestoration } from "react-router-dom";
 
 const Work = () => {
   usePageTitle("Work history");
   return (
     <div className={styles["work"]}>
+      <ScrollRestoration />
       <header>
         <NavBar path="/work" />
       </header>
@@ -34,8 +34,6 @@ const Work = () => {
               I'm building an E-commerce Game Store and learning NodeJs side by
               side.
             </p>
-
-            <Blinker />
           </div>
 
           <div className={styles["work-projects"]}>

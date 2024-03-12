@@ -1,14 +1,14 @@
+@use "../../sass/partials/mixins" as *;
+
 .nav {
   width: 100%;
-  display: flex;
   padding: 3rem 4rem;
-  justify-content: space-between;
+  @include flex(space-between);
   background-color: var(--clr-grey-1);
 
   &__person {
-    display: flex;
+    @include flex($alignIt: center);
     gap: 2rem;
-    align-items: center;
     cursor: pointer;
 
     &--logo {

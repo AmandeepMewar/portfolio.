@@ -1,17 +1,32 @@
-import NavBar from "../../components/NavBar/NavBar";
-import profile from "../../assets/profile.jpeg";
 import styles from "./Home.module.scss";
-import TechStack from "../../components/TechStack/TechStack";
+import profile from "../../assets/profile.jpeg";
 
-import Footer from "../../components/Footer/Footer";
-import Button from "../../components/Button/Button";
-import Blinker from "../../components/Blinker/Blinker";
+import {
+  NavBar,
+  TechStack,
+  Footer,
+  Button,
+  Blinker,
+} from "../../components/index";
+
 import usePageTitle from "../../hooks/usePageTitle";
 
+import { ScrollRestoration, useNavigate } from "react-router-dom";
+
 const Home = () => {
+  const navigate = useNavigate();
   usePageTitle("Amandeep Mewar");
+
+  const handleWork = () => {
+    navigate("/work");
+  };
+
+  const handleAbout = () => {
+    navigate("/about");
+  };
   return (
     <div className={styles["home"]}>
+      <ScrollRestoration />
       <header>
         <NavBar path="/" />
       </header>
@@ -21,7 +36,7 @@ const Home = () => {
           <div className={styles["home__intro"]}>
             <div className={styles["home__intro--text"]}>
               <div className={styles["home__intro--heading"]}>
-                <h1>Hello everyone!</h1>
+                <h1>Hello there!</h1>
                 <h1>I&apos;m Amandeep.</h1>
               </div>
 
@@ -42,7 +57,7 @@ const Home = () => {
         <div className={styles["home__section"]}>
           <h1>Work history</h1>
           <p>Here you can find out more about the projects I've worked on.</p>
-          <Button>Check out my work history</Button>
+          <Button onClick={handleWork}>Check out my work history</Button>
         </div>
 
         <div className={styles["home__tech-stack"]}>
@@ -56,7 +71,7 @@ const Home = () => {
             Here you can find out more about me, my hobbies, and my personal
             projects I&apos;m currently working on.
           </p>
-          <Button>Get to know more about me</Button>
+          <Button onClick={handleAbout}>Get to know more about me</Button>
         </div>
       </main>
 

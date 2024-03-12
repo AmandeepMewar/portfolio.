@@ -1,8 +1,7 @@
+@use "../../sass/partials/mixins" as *;
+
 .footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  @include flex(center, center, column);
   gap: 2rem;
   margin-bottom: 4rem;
   margin-top: 10rem;
@@ -15,10 +14,7 @@
   }
 
   &__copyright {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    @include flex(center, center, column);
     padding: 1.6rem 4rem;
 
     border-bottom: 2.5px solid var(--clr-coral);

@@ -27,7 +27,9 @@ const Card = props => {
         <p>{description}</p>
 
         <div className={styles["card-icons"]}>
-          {stack.map(slug => stackIcon[slug])}
+          {stack.map((slug, index) => (
+            <div key={index}>{stackIcon[slug]}</div>
+          ))}
         </div>
       </div>
 

@@ -1,15 +1,11 @@
 import {
   createBrowserRouter,
   createRoutesFromElements,
-  Link,
   Route,
   RouterProvider,
-  Routes,
 } from "react-router-dom";
 
-import Home from "./pages/Home/Home";
-import Work from "./pages/Work/Work";
-import About from "./pages/About/About";
+import { About, Work, Home } from "./pages/index";
 
 const routerDefinitions = createRoutesFromElements(
   <Route>

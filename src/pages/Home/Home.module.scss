@@ -1,21 +1,17 @@
+@use "../../sass/partials//mixins" as *;
+
 .home {
   width: 100%;
   min-height: 100vh;
 
-  &__hero {
-    height: 90vh;
-    position: relative;
-  }
-
   &__intro {
-    display: flex;
     padding: 9rem 18rem;
+
+    @include flex(center, center);
     gap: 8rem;
-    align-items: center;
 
     &--text {
-      display: flex;
-      flex-direction: column;
+      @include flex($flexDir: column);
       gap: 2rem;
     }
 
@@ -26,7 +22,7 @@
 
     &--img {
       img {
-        width: 40rem;
+        width: 36rem;
         border-radius: 2rem;
       }
     }
@@ -43,10 +39,7 @@
 
   &__section {
     width: 47rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    @include flex(center, center, column);
     gap: 1.5rem;
     margin: 10rem auto;
 

@@ -1,10 +1,9 @@
+@use "../../sass/partials/mixins" as *;
+
 .arrow-icon {
   width: 100%;
-  display: flex;
+  @include flex(center);
   animation: blink 2s linear infinite;
-  justify-content: center;
-  position: absolute;
-  bottom: 7%;
 
   &::before {
     content: "";

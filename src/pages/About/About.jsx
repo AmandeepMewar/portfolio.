@@ -1,13 +1,15 @@
-import NavBar from "../../components/NavBar/NavBar";
+import { Footer, NavBar } from "../../components/index";
+
 import styles from "./About.module.scss";
 
-import Footer from "../../components/Footer/Footer";
 import usePageTitle from "../../hooks/usePageTitle";
+import { ScrollRestoration } from "react-router-dom";
 
 const About = () => {
   usePageTitle("About me");
   return (
     <div className={styles["about"]}>
+      <ScrollRestoration />
       <header>
         <NavBar path="/about" />
       </header>
