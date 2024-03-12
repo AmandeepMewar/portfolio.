@@ -36,7 +36,7 @@ const Home = () => {
           <div className={styles["home__intro"]}>
             <div className={styles["home__intro--text"]}>
               <div className={styles["home__intro--heading"]}>
-                <h1>Hello there!</h1>
+                <h1>Hello everyone!</h1>
                 <h1>I&apos;m Amandeep.</h1>
               </div>
 

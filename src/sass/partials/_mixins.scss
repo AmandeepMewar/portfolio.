@@ -1,6 +1,35 @@
+//Breakpoints
+$lg: 1000px;
+$md: 900px;
+$sm: 600px;
+
 @mixin flex($justCon: flex-start, $alignIt: flex-start, $flexDir: row) {
   display: flex;
   justify-content: $justCon;
   align-items: $alignIt;
   flex-direction: $flexDir;
+}
+
+@mixin responsive($breakpoint) {
+  @if $breakpoint==xl {
+    @media (max-width: $xl) {
+      @content;
+    }
+  } @else if $breakpoint==lg {
+    @media (max-width: $lg) {
+      @content;
+    }
+  } @else if $breakpoint==md {
+    @media (max-width: $md) {
+      @content;
+    }
+  } @else if $breakpoint==sm {
+    @media (max-width: $sm) {
+      @content;
+    }
+  } @else if $breakpoint==xs {
+    @media (max-width: $xs) {
+      @content;
+    }
+  }
 }

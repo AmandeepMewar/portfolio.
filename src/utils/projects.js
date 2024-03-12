@@ -43,7 +43,7 @@ const ProjectsData = [
   },
   {
     id: 6,
-    title: "Customer-Segmentation 🛃",
+    title: "Customer Segmentation 🛃",
     description:
       "Customer Segmentation of a mall dataset using KMeans and DBScan",
     stack: ["Python"],

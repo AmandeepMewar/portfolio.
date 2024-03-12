@@ -1,18 +1,27 @@
 @use "../../sass/partials//mixins" as *;
+@use "../../sass/partials/variables" as *;
 
 .home {
-  width: 100%;
-  min-height: 100vh;
+  max-width: 100%;
+  min-height: 100%;
 
   &__intro {
-    padding: 9rem 18rem;
-
+    width: 100%;
+    margin: 9rem 0;
     @include flex(center, center);
+    flex-wrap: wrap;
     gap: 8rem;
 
     &--text {
+      width: 45vw;
       @include flex($flexDir: column);
       gap: 2rem;
+
+      @include responsive(lg) {
+        width: 70vw;
+        text-align: center;
+        @include flex(center, center, column);
+      }
     }
 
     &--para {
@@ -38,10 +47,15 @@
   }
 
   &__section {
-    width: 47rem;
+    width: 50rem;
     @include flex(center, center, column);
     gap: 1.5rem;
     margin: 10rem auto;
+    text-align: center;
+
+    @include responsive(sm) {
+      width: 70%;
+    }
 
     p {
       text-align: center;

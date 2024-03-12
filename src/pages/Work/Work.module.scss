@@ -13,8 +13,12 @@ main {
 }
 
 .work-content {
-  width: 60%;
+  width: 75%;
   @include flex($alignIt: center, $flexDir: column);
+
+  @include responsive(md) {
+    width: 85%;
+  }
 }
 
 .work-intro {
@@ -36,7 +40,7 @@ main {
 
   &__cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     padding: 10rem 0;
     row-gap: 8rem;
     column-gap: 10rem;

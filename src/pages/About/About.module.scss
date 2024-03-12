@@ -8,6 +8,10 @@
 .about-content {
   width: 70%;
   @include flex($alignIt: center, $flexDir: column);
+
+  @include responsive(md) {
+    width: 85%;
+  }
 }
 
 .about-intro {
