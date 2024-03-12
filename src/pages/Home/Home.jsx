@@ -6,7 +6,10 @@ import TechStack from "../../components/TechStack/TechStack";
 import Footer from "../../components/Footer/Footer";
 import Button from "../../components/Button/Button";
 import Blinker from "../../components/Blinker/Blinker";
+import usePageTitle from "../../hooks/usePageTitle";
+
 const Home = () => {
+  usePageTitle("Amandeep Mewar");
   return (
     <div className={styles["home"]}>
       <header>

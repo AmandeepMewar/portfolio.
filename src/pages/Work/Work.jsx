@@ -1,11 +1,14 @@
 import Blinker from "../../components/Blinker/Blinker";
 import Card from "../../components/Card/Card";
-import Footer from "../../components/Footer/Footer";
 import NavBar from "../../components/NavBar/NavBar";
 import ProjectsData from "../../utils/projects";
 import styles from "./Work.module.scss";
 
+import Footer from "../../components/Footer/Footer";
+import usePageTitle from "../../hooks/usePageTitle";
+
 const Work = () => {
+  usePageTitle("Work history");
   return (
     <div className={styles["work"]}>
       <header>
@@ -46,6 +49,8 @@ const Work = () => {
           </div>
         </div>
       </main>
+
+      <Footer />
     </div>
   );
 };
