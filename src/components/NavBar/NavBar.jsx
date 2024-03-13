@@ -1,5 +1,7 @@
+import { Logo } from "../index";
 import styles from "./NavBar.module.scss";
 import { NavLink } from "react-router-dom";
+
 const navi = [
   {
     id: 1,
@@ -17,15 +19,12 @@ const navi = [
     to: "/about",
   },
 ];
+
 const NavBar = ({ path }) => {
   return (
     <nav className={styles["nav"]}>
-      <div className={styles["nav__person"]}>
-        <div className={styles["nav__person--logo"]}>
-          <h4>AM</h4>
-        </div>
-        <h4>Amandeep Mewar</h4>
-      </div>
+      <Logo />
+
       <div className={styles["nav__menu"]}>
         <ul className={styles["nav__menu--list"]}>
           {navi.map(item => {

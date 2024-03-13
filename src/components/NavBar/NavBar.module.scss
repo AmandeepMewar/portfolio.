@@ -9,6 +9,7 @@
 
   @include responsive(sm) {
     padding: 1rem 2rem;
+    @include flex(center, center, $flexDir: column);
   }
 
   &__person {
@@ -30,6 +31,10 @@
   &__menu--list {
     display: flex;
     gap: 2rem;
+
+    @include responsive(sm) {
+      gap: 5rem;
+    }
   }
 
   &__menu--item {
