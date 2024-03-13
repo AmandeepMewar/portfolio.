@@ -5,8 +5,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 
-import { About, Work, Home } from "./pages/index";
-import Error from "./pages/Error/Error";
+import { About, Work, Home, Error } from "./pages";
 
 const routerDefinitions = createRoutesFromElements(
   <Route errorElement={<Error />}>

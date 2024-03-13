@@ -1,12 +1,8 @@
 import styles from "./Card.module.scss";
 
 import { IoLogoJavascript } from "react-icons/io5";
-import { FaCss3Alt } from "react-icons/fa";
-import { FaReact } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa";
-import { FaPython } from "react-icons/fa";
+import { FaReact, FaGithub, FaPython, FaCss3Alt } from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa6";
-
 const stackIcon = {
   ReactJs: <FaReact className={styles["card-icon"]} />,
 

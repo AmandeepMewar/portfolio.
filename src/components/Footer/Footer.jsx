@@ -1,8 +1,9 @@
-import { FaLinkedin } from "react-icons/fa";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
-import { FaGithub } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+
 import styles from "./Footer.module.scss";
+
 const Footer = () => {
   const year = new Date().getFullYear();
   return (

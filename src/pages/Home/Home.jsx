@@ -1,13 +1,7 @@
 import styles from "./Home.module.scss";
 import profile from "../../assets/profile.jpeg";
 
-import {
-  NavBar,
-  TechStack,
-  Footer,
-  Button,
-  Blinker,
-} from "../../components/index";
+import { NavBar, TechStack, Footer, Button, Blinker } from "../../components";
 
 import usePageTitle from "../../hooks/usePageTitle";
 

@@ -1,7 +1,7 @@
 import styles from "./Work.module.scss";
 
 import ProjectsData from "../../utils/projects";
-import { Card, NavBar, Footer } from "../../components/index";
+import { Card, NavBar, Footer } from "../../components";
 
 import usePageTitle from "../../hooks/usePageTitle";
 import { ScrollRestoration } from "react-router-dom";

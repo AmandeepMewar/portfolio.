@@ -8,14 +8,16 @@
   border: var(--border-default-1);
   padding: 2rem;
   gap: 2rem;
-  h2 {
-    text-align: center;
-  }
 }
 
 .card-detail {
   @include flex($flexDir: column);
   gap: 1.4rem;
+
+  h2 {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 .card-icons {
