@@ -30,8 +30,8 @@ const ProjectsData = [
     description:
       "Developed an E-commerce platform for video games with React.js for easy shopping. The project is built using Redux Toolkit for state management. The application also features search functionality, cart functionality, and detailed game view page.",
     stack: ["ReactJs", "JavaScript", "Sass", "Redux"],
-    code: "https://github.com/AmandeepMewar/Game-space",
-    demo: "https://gamespacex.vercel.app/",
+    code: "https://github.com/AmandeepMewar/RedXone-Games-Ecommerce",
+    demo: "https://redxonegamex-ecommerce-store.netlify.app/",
   },
   {
     id: 3,
